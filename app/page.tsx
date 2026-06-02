@@ -1,4 +1,12 @@
-
+ <svg
+                      className={homePageStyles.calloutCard.icon}
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      aria-hidden
+                    >
+                      <path d="M3 12l9-9 9 9" strokeWidth="1.2" />
+                    </svg>
 
               I turn fuzzy ideas into live Products (<em>quickly</em>) — full-stack AI Builder. Currently working as a Founding Engineer at{" "}
               <a className={homePageStyles.link} href="https://invoicegenerator-frontend-tdng.onrender.com/">
