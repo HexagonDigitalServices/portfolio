@@ -47,6 +47,84 @@
             </a>
 
 
+     {/* Name Field */}
+              <div className={contactPageStyles.formFieldContainer}>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  onFocus={() => setFocused("name")}
+                  onBlur={() => setFocused(null)}
+                  className={contactPageStyles.formInput}
+                  placeholder="John Doe"
+                  required
+                />
+                <label htmlFor="name" className={getLabelClass("name")}>
+                  Name
+                </label>
+              </div>
+
+              {/* Email Field */}
+              <div className={contactPageStyles.formFieldContainer}>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  onFocus={() => setFocused("email")}
+                  onBlur={() => setFocused(null)}
+                  className={contactPageStyles.formInput}
+                  placeholder="john@example.com"
+                  required
+                />
+                <label htmlFor="email" className={getLabelClass("email")}>
+                  Email
+                </label>
+              </div>
+            </div>
+
+            {/* Subject Field */}
+            <div className={contactPageStyles.formFieldContainer}>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                onFocus={() => setFocused("subject")}
+                onBlur={() => setFocused(null)}
+                className={contactPageStyles.formInput}
+                placeholder="Project Collaboration"
+                required
+              />
+              <label htmlFor="subject" className={getLabelClass("subject")}>
+                Subject
+              </label>
+            </div>
+
+            {/* Message Field */}
+            <div className={contactPageStyles.formFieldContainer}>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                onFocus={() => setFocused("message")}
+                onBlur={() => setFocused(null)}
+                rows={6}
+                className={contactPageStyles.formTextarea}
+                placeholder="Tell me about your project..."
+                required
+              />
+              <label htmlFor="message" className={getLabelClass("message")}>
+                Message
+              </label>
+            </div>
+
+
 
   <svg
                     className={contactPageStyles.submitButtonIcon}
